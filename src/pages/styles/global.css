@@ -1,0 +1,368 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+/* =========================
+   GOOGLE FONTS
+========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --font-title: "Poiret One", system-ui, sans-serif;
+  --font-text: "Space Grotesk", system-ui, sans-serif;
+
+  --color-primary: #00b9e8;
+  --color-projects-bg: #f5efe6;
+  --color-contact-bg: #fafafa;
+
+  --color-text-dark: #0f172a;
+  --color-white: #ffffff;
+
+  --color-muted: rgba(15, 23, 42, 0.7);
+}
+
+/* =========================
+   RESET / BASE
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-text);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-text);
+}
+
+/* =========================
+   CONTAINER CENTRAL
+========================= */
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.logos,
+.project-logos,
+.project-images {
+  justify-content: center;
+}
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+  min-height: 100svh; /* pleine hauteur écran (mobile safe) */
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: clamp(4rem, 8vw, 8rem) 1.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Nom Prénom */
+#hero h1 {
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(2.4rem, 5vw, 2.8rem); /* ~45px */
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Développeur d'applications web complètes */
+#hero p:first-of-type {
+  font-family: var(--font-title); /* Poiret One */
+  font-size: clamp(3rem, 7vw, 4.4rem); /* ~70px */
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+}
+
+/* Phrase d'accroche */
+#hero p:nth-of-type(2) {
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(1.8rem, 4vw, 2.2rem); /* ~35px */
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
+}
+
+/* =========================
+   HERO - LOGOS
+========================= */
+
+.logos {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.logos img {
+  width: 48px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* =========================
+   BOUTON HERO
+========================= */
+
+#hero a {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+
+  background-color: var(--color-white);
+  color: var(--color-text-dark); /* #0F172A */
+
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
+  font-weight: 500; /* medium */
+
+  border-radius: 12px;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#hero a:hover,
+#hero a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   PROJETS
+========================= */
+
+#projets {
+  padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+  background-color: var(--color-projects-bg);
+  color: var(--color-text-dark);
+}
+#projets h2 {
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(2.8rem, 5vw, 3.125rem); /* 50px */
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+#projets h3 {
+  font-size: clamp(1.9rem, 4vw, 2.1875rem); /* 35px */
+  font-weight: 300;
+  text-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+}
+
+#projets p {
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
+  font-weight: 400;
+  max-width: 60ch;
+  margin: 0.75rem auto;
+}
+
+#projets article a {
+  display: inline-block;
+  margin-top: 1.5rem;
+
+  background-color: #2fa4c9;
+  color: #ffffff;
+
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
+  font-weight: 500; /* medium */
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projets article a:hover,
+#projets article a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+}
+
+/* =========================
+   ARTICLES PROJETS
+========================= */
+
+article {
+  margin-top: 4rem;
+}
+
+article header {
+  margin-bottom: 1.5rem;
+}
+
+.project-logos {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--color-muted);
+}
+
+.project-logos img {
+  width: 80px;
+  opacity: 0.7;
+  filter: brightness(0);
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-images img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* =========================
+   RESPONSIVE IMAGES PROJETS
+========================= */
+
+@media (max-width: 768px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+
+  .project-images img {
+    height: 220px;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-logos {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-logos img {
+  width: 48px;
+  height: 48px;
+}
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+  padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+  background-color: var(--color-contact-bg);
+  color: var(--color-text-dark);
+}
+
+#contact h2 {
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(3.2rem, 6vw, 3.75rem); /* ~60px */
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+form {
+  max-width: 720px;
+}
+
+form div {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-text);
+  font-size: 1.5rem; /* ~20px */
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-family: var(--font-text);
+  font-size: 1.25rem; /* ~20px */
+  line-height: 1.4;
+  border: 1px solid rgba(15, 23, 42, 0.3);
+  border-radius: 2px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(47, 164, 201, 0.6);
+}
+
+form button {
+  display: block;
+  margin: 1.5rem auto 0;
+
+  background-color: #2fa4c9;
+  color: #ffffff;
+
+  font-family: var(--font-text); /* Space Grotesk */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
+  font-weight: 500; /* medium */
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form {
+  margin-inline: auto;
+  text-align: left; /* lisibilité des labels */
+}
+/* =========================
+   HONEYPOT (FORM)
+========================= */
+
+.hp {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

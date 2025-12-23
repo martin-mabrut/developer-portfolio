@@ -1,16 +1,166 @@
 ---
-
 ---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Martin Mabrut — Développeur web</title>
+    <meta name="description" content="Développeur d'applications web complètes. Transformer des besoins réels en solutions innovantes et durables."/>
+	<link rel="stylesheet" href="/src/pages/styles/global.css" />
+  </head>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <body>
+    <header>
+      <section id="hero">
+		<div class="container">
+			<h1>Martin Mabrut</h1>
+			<p>Développeur d'applications web complètes</p>
+			<p>
+			"Transformer des besoins réels en solutions innovantes et durables."
+			</p>
+
+			<div class="logos" aria-hidden="true">
+			<!-- logos SVG ici -->
+				<img src="/public/logos/html5.svg" alt="HTML" />
+				<img src="/public/logos/css.svg" alt="CSS" />
+				<img src="/public/logos/javascript.svg" alt="JavaScript" />
+				<img src="/public/logos/react.svg" alt="React" />
+				<img src="/public/logos/node-js.svg" alt="Node.js" />
+			</div>
+
+			<a href="#contact">Me contacter</a>
+		</div>
+      </section>
+    </header>
+
+    <main>
+      <section id="projets">
+			<div class="container">
+				<h2>Projets et réalisations</h2>
+				<p>
+				Formé au développement web et à la digitalisation des entreprises, je
+				souhaite m'impliquer dans un projet de développement de solutions
+				numériques en alternance.
+				</p>
+				<p>Voici quelques projets réalisés lors de mon parcours.</p>
+
+				<article>
+					<header>
+						<div class="project-logos">
+							<img src="/public/logos/react.svg" alt="HTML" />
+							<img src="/public/logos/css.svg" alt="CSS" />
+						</div>
+
+						<h3>Application de location immobilière</h3>
+						<p>Interface web moderne et dynamique, pensée pour la navigation et la clarté de l'information.</p>
+					</header>
+
+					<div class="project-images">
+						<img src="/public/images/location-immobilière-1.webp" alt="Page d’accueil de l’application de location immobilière" loading="lazy"/>
+						<img src="/public/images/location-immobilière-2.webp" alt="Page de détail d’un bien immobilier" loading="lazy"/>
+					</div>
+
+					<a href="https://github.com/martin-mabrut/Projet-5-Application-React-de-location-immobiliere" target="_blank" rel="noopener noreferrer">Voir le code</a>
+				</article>
+
+				<article>
+					<header>
+						<div class="project-logos">
+						<img src="/public/logos/node-js.svg" alt="Node.js" />
+						<img src="/public/logos/express.svg" alt="Express" />
+						<img src="/public/logos/mongodb.svg" alt="MongoDB" />
+						<img src="/public/logos/mongoosedotws.svg" alt="JavaScript" />
+						</div>
+
+						<h3>API de notation de livres</h3>
+						<p>Gestion de comptes utilisateurs et de contenus via une base de données.</p>
+					</header>
+
+					<div class="project-images">
+						<img src="/public/images/api-notations-livres-1.webp" alt="Structure de l’API de notation de livres" loading="lazy"/>
+						<img src="/public/images/api-notations-livres-2.webp" alt="Exemple de requêtes et réponses de l’API" loading="lazy"/>
+					</div>
+
+					<a href="https://github.com/martin-mabrut/Projet-6-Backend-d-un-site-de-notation-de-livres" target="_blank" rel="noopener noreferrer">Voir le code</a>
+				</article>
+
+				<article>
+					<header>
+						<div class="project-logos">
+						<img src="/public/logos/notion.svg" alt="Git" />
+						<img src="/public/logos/googledrive.svg" alt="Figma" />
+						<img src="/public/logos/googlesheets.svg" alt="Diagramme UML" />
+						</div>
+
+						<h3>Planification du développement d'une application web</h3>
+						<p>Étude des choix technologiques et définition d’un processus de développement fiable.</p>
+					</header>
+
+					<div class="project-images">
+						<img src="/public/images/planification-développement-app-1.webp" alt="Schéma de planification de l’application web" loading="lazy"/>
+						<img src="/public/images/planification-développement-app-2.webp" alt="Organisation des étapes du développement" loading="lazy"/>
+					</div>
+
+					<a href="https://github.com/ton-username/planning-app" target="_blank" rel="noopener noreferrer">Voir le code</a>
+				</article>
+			</div>
+      	</section>
+    </main>
+
+    <footer>
+      	<section id="contact">
+			<div class="container">
+				<h2>Me contacter</h2>
+				<form id="contact-form" action="https://formspree.io/f/xvzpvznd" method="POST" novalidate>
+				<!-- Honeypot anti-spam (doit rester caché) -->
+				<div class="hp">
+					<label for="company">Entreprise</label>
+					<input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+				</div>
+
+				<div>
+					<label for="name">Nom</label>
+					<input id="name" name="name" type="text" autocomplete="name" required/>
+				</div>
+
+				<div>
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" autocomplete="email" required/>
+				</div>
+
+				<div>
+					<label for="message">Votre message</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+				</div>
+
+				<!-- Email subject -->
+				<input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+
+				<!-- (Optionnel) redirection après succès : on la créera après -->
+				<input type="hidden" name="_next" value="/merci/" />
+
+				<button type="submit">Envoyer</button>
+
+				<!-- Zone de statut (on l’utilisera à l’étape suivante avec JS) -->
+				<p id="form-status" role="status" aria-live="polite"></p>
+				</form>
+			</div>
+      	</section>
+    </footer>
+	<script>
+		const isBackForward = () => {
+			const nav = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
+			const legacy = (performance as any).navigation?.type === 2;
+			return nav?.type === "back_forward" || legacy;
+		};
+
+		window.addEventListener("pageshow", () => {
+			if (!isBackForward()) return;
+
+			const el = document.getElementById("contact-form");
+			if (el instanceof HTMLFormElement) el.reset();
+		});
+	</script>
+  </body>
 </html>
