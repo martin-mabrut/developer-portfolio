@@ -15,21 +15,28 @@ import "../styles/global.css";
       <section id="hero">
 		<div class="container">
 			<h1>Martin Mabrut</h1>
-			<p>Développeur d'applications web complètes</p>
-			<p>
-			"Transformer des besoins réels en solutions innovantes et durables."
-			</p>
+			<h2>Développeur d'applications web complètes</h2>
+
+			<h3>Compétences techniques</h3>
 
 			<div class="logos" aria-hidden="true">
-			<!-- logos SVG ici -->
 				<img src="/logos/html5.svg" alt="HTML" />
 				<img src="/logos/css.svg" alt="CSS" />
 				<img src="/logos/javascript.svg" alt="JavaScript" />
 				<img src="/logos/react.svg" alt="React" />
 				<img src="/logos/node-js.svg" alt="Node.js" />
+				<img src="/logos/git.svg" alt="Git" />
 			</div>
 
-			<a href="#contact">Me contacter</a>
+			<h3>Organisation & productivité</h3>
+
+			<div class="logos" aria-hidden="true">
+				<img src="/logos/notion.svg" alt="Notion" />
+				<img src="/logos/trello.svg" alt="Trello" />
+				<img src="/logos/googledrive.svg" alt="Google Drive" />
+				<img src="/logos/googlesheets.svg" alt="Google Sheets" />
+			</div>
+
 		</div>
       </section>
     </header>
@@ -78,8 +85,8 @@ import "../styles/global.css";
 					</header>
 
 					<div class="project-images">
-						<img src="/images/api-notations-livres-1.webp" alt="Structure de l’API de notation de livres" loading="lazy"/>
-						<img src="/images/api-notations-livres-2.webp" alt="Exemple de requêtes et réponses de l’API" loading="lazy"/>
+						<img src="/images/api-notations-livres-1.webp" alt="Liste des livres affichée à partir des données fournies par le backend développée pour l’application" loading="lazy"/>
+						<img src="/images/api-notations-livres-2.webp" alt="Page de détail d’un livre avec les données et le système de notation gérés par le backend" loading="lazy"/>
 					</div>
 
 					<a href="https://github.com/martin-mabrut/Projet-6-Backend-d-un-site-de-notation-de-livres" target="_blank" rel="noopener noreferrer">Voir le code</a>
@@ -98,11 +105,10 @@ import "../styles/global.css";
 					</header>
 
 					<div class="project-images">
-						<img src="/images/planification-developpement-app-1.webp" alt="Schéma de planification de l’application web" loading="lazy"/>
-						<img src="/images/planification-developpement-app-2.webp" alt="Organisation des étapes du développement" loading="lazy"/>
+						<img src="/images/planification-developpement-app-1.webp" alt="Tableau Kanban présentant les différentes étapes du développement de l’application" loading="lazy"/>
+						<img src="/images/planification-developpement-app-2.webp" alt="Organisation des étapes du développement en sprints successifs" loading="lazy"/>
 					</div>
 
-					<a href="https://github.com/ton-username/planning-app" target="_blank" rel="noopener noreferrer">Voir le code</a>
 				</article>
 			</div>
       	</section>
@@ -112,7 +118,7 @@ import "../styles/global.css";
       	<section id="contact">
 			<div class="container">
 				<h2>Me contacter</h2>
-				<form id="contact-form" action="https://formspree.io/f/xvzpvznd" method="POST" novalidate>
+				<form id="contact-form" action="https://formspree.io/f/xvzpvznd" method="POST">
 				<!-- Honeypot anti-spam (doit rester caché) -->
 				<div class="hp">
 					<label for="company">Entreprise</label>
@@ -137,7 +143,7 @@ import "../styles/global.css";
 				<!-- Email subject -->
 				<input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
 
-				<!-- (Optionnel) redirection après succès : on la créera après -->
+				<!-- redirection après succès, pour le futur -->
 				<input type="hidden" name="_next" value="/merci/" />
 
 				<button type="submit">Envoyer</button>

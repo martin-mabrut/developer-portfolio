@@ -15,9 +15,9 @@
   --font-title: "Poiret One", system-ui, sans-serif;
   --font-text: "Space Grotesk", system-ui, sans-serif;
 
-  --color-primary: #00b9e8;
-  --color-projects-bg: #f5efe6;
-  --color-contact-bg: #fafafa;
+  --color-primary: #0369a1;
+  --color-projects-bg: #f1f5f9;
+  --color-contact-bg: #f8fafc;
 
   --color-text-dark: #0f172a;
   --color-white: #ffffff;
@@ -92,27 +92,26 @@ h3 {
 /* Nom Prénom */
 #hero h1 {
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(2.4rem, 5vw, 2.8rem); /* ~45px */
+  font-size: clamp(2.2rem, 4.5vw, 2.6rem);
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
 }
 
 /* Développeur d'applications web complètes */
-#hero p:first-of-type {
+#hero h2 {
   font-family: var(--font-title); /* Poiret One */
   font-size: clamp(3rem, 7vw, 4.4rem); /* ~70px */
-  margin-bottom: 1.5rem;
+  margin-bottom: 6rem;
   text-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
 }
 
 /* Phrase d'accroche */
-#hero p:nth-of-type(2) {
+#hero h3 {
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.8rem, 4vw, 2.2rem); /* ~35px */
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
   font-weight: 300;
   margin-bottom: 2.5rem;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
 }
 
 /* =========================
@@ -129,33 +128,6 @@ h3 {
   width: 48px;
   height: auto;
   filter: brightness(0) invert(1);
-}
-
-/* =========================
-   BOUTON HERO
-========================= */
-
-#hero a {
-  display: inline-block;
-  padding: 0.9rem 1.8rem;
-
-  background-color: var(--color-white);
-  color: var(--color-text-dark); /* #0F172A */
-
-  font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
-  font-weight: 500; /* medium */
-
-  border-radius: 12px;
-  text-decoration: none;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#hero a:hover,
-#hero a:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* =========================
@@ -192,7 +164,7 @@ h3 {
   display: inline-block;
   margin-top: 1.5rem;
 
-  background-color: #2fa4c9;
+  background-color: #0284c7;
   color: #ffffff;
 
   font-family: var(--font-text); /* Space Grotesk */
@@ -203,13 +175,17 @@ h3 {
   border-radius: 8px;
 
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transition: background-color 0.15s ease-in-out;
 }
 
 #projets article a:hover,
 #projets article a:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+  background-color: #0369a1;
+}
+
+#projets article a:active {
+  background-color: #075985;
 }
 
 /* =========================
@@ -335,7 +311,7 @@ form button {
   display: block;
   margin: 1.5rem auto 0;
 
-  background-color: #2fa4c9;
+  background-color: #0284c7;
   color: #ffffff;
 
   font-family: var(--font-text); /* Space Grotesk */
@@ -348,6 +324,10 @@ form button {
 
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:active {
+  background-color: #075985;
 }
 
 form {
