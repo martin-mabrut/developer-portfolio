@@ -18,6 +18,8 @@
   --color-primary: #0369a1;
   --color-projects-bg: #f1f5f9;
   --color-contact-bg: #f8fafc;
+  --color-skills-bg: #020617;
+  --color-skills-text: #f8fafc;
 
   --color-text-dark: #0f172a;
   --color-white: #ffffff;
@@ -83,7 +85,7 @@ h3 {
   min-height: 100svh; /* pleine hauteur écran (mobile safe) */
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: clamp(4rem, 8vw, 8rem) 1.5rem;
+  padding: clamp(2.5rem, 5vw, 5rem) 1.5rem;
 
   display: flex;
   align-items: center;
@@ -94,7 +96,7 @@ h3 {
   font-family: var(--font-text); /* Space Grotesk */
   font-size: clamp(2.2rem, 4.5vw, 2.6rem);
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 0px;
   margin-bottom: 4rem;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
 }
@@ -108,12 +110,13 @@ h3 {
 }
 
 /* Phrase d'accroche */
-#hero h3 {
-  font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.6rem, 3.5vw, 2rem);
+#hero p {
+  font-family: var(--font-text);
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
   font-weight: 300;
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
+
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* =========================
@@ -123,12 +126,43 @@ h3 {
 .logos {
   display: flex;
   gap: 4rem;
+  margin-bottom: 2rem;
 }
 
 .logos img {
-  width: 48px;
+  width: 40px;
   height: auto;
   filter: brightness(0) invert(1);
+}
+
+/* =========================
+   COMPETENCES
+========================= */
+
+#competences {
+  font-family: var(--font-text);
+  font-weight: 300;
+  color: var(--color-skills-text);
+  background-color: var(--color-skills-bg);
+  padding: 3rem 0;
+}
+
+.skills-title {
+  font-size: clamp(2.2rem, 4vw, 2.6rem);
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.skills-subtitle {
+  font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* =========================
