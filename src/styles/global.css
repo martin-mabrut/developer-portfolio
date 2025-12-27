@@ -1,6 +1,3 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-
 /* =========================
    GOOGLE FONTS
 ========================= */
@@ -18,7 +15,7 @@
   --color-primary: #0369a1;
   --color-projects-bg: #f1f5f9;
   --color-contact-bg: #f8fafc;
-  --color-skills-bg: #020617;
+  --color-skills-bg: #0f172a;
   --color-skills-text: #f8fafc;
 
   --color-text-dark: #0f172a;
@@ -104,7 +101,7 @@ h3 {
 /* Développeur d'applications web complètes */
 #hero h2 {
   font-family: var(--font-title); /* Poiret One */
-  font-size: clamp(3rem, 7vw, 4.4rem); /* ~70px */
+  font-size: clamp(3rem, 7vw, 4.4rem); 
   margin-bottom: 3rem;
   text-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
 }
@@ -189,7 +186,7 @@ h3 {
 
 #projets p {
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); 
   font-weight: 400;
   max-width: 60ch;
   margin: 0.75rem auto;
@@ -203,8 +200,8 @@ h3 {
   color: #ffffff;
 
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
-  font-weight: 500; /* medium */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); 
+  font-weight: 500; 
 
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -304,7 +301,7 @@ article header {
 
 #contact h2 {
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(3.2rem, 6vw, 3.75rem); /* ~60px */
+  font-size: clamp(3.2rem, 6vw, 3.75rem); 
   font-weight: 300;
   margin-bottom: 2.5rem;
 }
@@ -321,7 +318,7 @@ label {
   display: block;
   margin-bottom: 0.6rem;
   font-family: var(--font-text);
-  font-size: 1.5rem; /* ~20px */
+  font-size: 1.5rem; 
   font-weight: 500;
 }
 
@@ -330,7 +327,7 @@ textarea {
   width: 100%;
   padding: 0.9rem 1rem;
   font-family: var(--font-text);
-  font-size: 1.25rem; /* ~20px */
+  font-size: 1.25rem; 
   line-height: 1.4;
   border: 1px solid rgba(15, 23, 42, 0.3);
   border-radius: 2px;
@@ -350,8 +347,8 @@ form button {
   color: #ffffff;
 
   font-family: var(--font-text); /* Space Grotesk */
-  font-size: clamp(1.4rem, 3vw, 1.5625rem); /* 25px */
-  font-weight: 500; /* medium */
+  font-size: clamp(1.4rem, 3vw, 1.5625rem); 
+  font-weight: 500; 
 
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -367,8 +364,9 @@ form button:active {
 
 form {
   margin-inline: auto;
-  text-align: left; /* lisibilité des labels */
+  text-align: left; 
 }
+
 /* =========================
    HONEYPOT (FORM)
 ========================= */
